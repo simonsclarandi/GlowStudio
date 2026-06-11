@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fuentes personalizadas */
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+
+  /* Paleta de colores Glow Studio - Elegante y femenina */
+  --color-primary-main: #2E292E;     /* Texto oscuro elegante (casi negro) */
+  --color-primary-light: #4A454A;    /* Variante ligeramente más clara */
+  --color-primary-dark: #1A181A;     /* Texto muy oscuro para contraste */
+
+  --color-secondary-main: #CFAE7C;   /* Dorado suave (acento principal) */
+  --color-secondary-light: #D8C3A5;  /* Pastel más claro */
+  --color-secondary-dark: #B8965E;   /* Dorado más intenso
+
+  --color-nude-base: #FDFDF9;        /* Fondo base nude muy suave */
+  --color-nude-light: #FAFBF5;       /* Fondo ligeramente más cálido */
+  --color-nude-cream: #FFF9F0;       /* Crema pastel para secciones */
+
+  --color-accent: #CFAE7C;           /* Dorado para destacar */
+  --color-background: #FDFDF9;
+  --color-surface: #FFFFFF;
+}
+
+/* Reset básico y utilidades personalizadas */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Aplicamos la fuente base a todo el sitio */
+body {
+  font-family: var(--font-sans);
+}
+
+/* Hacemos que todos los títulos usen Montserrat automáticamente */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
