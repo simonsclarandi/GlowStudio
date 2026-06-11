@@ -25,22 +25,25 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#FDFDF9]/95 via-[#FDFDF9]/85 to-transparent"></div>
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
 
-      <div className="relative z-10 w-full mx-auto max-w-7xl">
-        <div className="w-full max-w-4xl">
-          {/* Textos centrados */}
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
-            <h1 className="mb-6 text-4xl font-black leading-none tracking-tight text-primary-main md:text-5xl lg:text-6xl">
+      <div className="relative z-10 w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        {/* Contenedor principal para mantener todo agrupado y que no se estire demasiado en monitores grandes */}
+        <div className="flex flex-col w-full max-w-4xl mx-auto">
+          
+          {/* 1. Título y Subtítulo Centrados */}
+          <div className="w-full text-center mb-8">
+            <h1 className="mb-4 text-4xl font-black leading-none tracking-tight text-primary-main md:text-5xl lg:text-6xl text-[#2D2D2D]">
               {hero.title}
             </h1>
-
-            <h2 className="mb-8 max-w-2xl text-2xl font-semibold leading-tight text-secondary-main md:text-2xl lg:text-3xl">
+            <h2 className="text-xl font-semibold leading-tight text-secondary-main md:text-2xl text-[#C6A67A]">
               {hero.subtitle}
             </h2>
+          </div>
 
-            <p className="mb-8 max-w-2xl text-lg leading-relaxed text-gray-700 whitespace-pre-line md:text-xl lg:text-2xl">
+          {/* 2. Descripción y Botón a la Izquierda */}
+          <div className="w-full flex flex-col items-start text-left">
+            <p className="mb-8 max-w-2xl text-base leading-relaxed text-gray-600 md:text-lg">
               {hero.description}
             </p>
-          </div>
 
           {/* Botón principal */}
           <div className="flex flex-col gap-4 mt-4 sm:flex-row sm:items-center">
@@ -66,6 +69,7 @@ export default function Hero() {
             >
               {hero.ctaText}
             </Button>
+          </div>
           </div>
         </div>
       </div>

@@ -92,7 +92,7 @@ export const siteConfig = {
 
   appointment: {
     tagline: "Cotizá rápido",
-    title: "Pasamos tu presupuesto",
+    title: "Cotizamos tu tratamiento",
     description: "Dejanos tu lista de servicios y te respondemos por WhatsApp con los precios y disponibilidad.",
     formFields: {
       name: "Tu Nombre",
