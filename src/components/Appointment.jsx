@@ -20,6 +20,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import { siteConfig } from '../config/siteConfig';
+import { PopupButton } from 'react-calendly';
 
 const initialForm = {
   name: '',
@@ -206,6 +207,13 @@ export default function Appointment() {
               >
                 {appointment.formFields.submitText}
               </Button>
+              <PopupButton
+                url="https://calendly.com/simonsclarandi-lp/30min"
+                rootElement={document.getElementById('root')}
+                text="AGENDAR MI TURNO"
+                className="px-8 py-4 bg-[#C6A67A] text-white font-bold rounded-full shadow-lg hover:bg-[#B39368] transition-all"
+              />
+              
             </div>
           </form>
         </div>
