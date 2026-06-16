@@ -26,8 +26,8 @@ export const siteConfig = {
     { text: 'Contacto', href: '#appointment' },
   ],
   contact: {
-    phone: "5493515146748",
-    phoneDisplay: "+54 9 351 514-6748",
+    phone: "5493517661740",
+    phoneDisplay: "+54 9 351 766-1740",
     address: "Ruta del Silencio 124 | B° Luminaria, Córdoba",
     mapUrl: "https://maps.app.goo.gl/KVqfLe1i335vFTTc8",
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4359.143259339456!2d-64.25779322341536!3d-31.394303895185992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329f1a10ecd5c7%3A0xaa8d7713be496c77!2sGLOW%20STUDIO!5e1!3m2!1ses-419!2sar!4v1780318008478!5m2!1ses-419!2sar",
@@ -140,7 +140,7 @@ export const siteConfig = {
     title: "Reserva tu turno online en segundos",
     subtitle: "Agenda tu cita en menos de un minuto",
     ctaText: "Agendar cita en WhatsApp",
-    ctaLink: "https://wa.me/5493515146748"
+    ctaLink: "https://wa.me/5493517661740"
   },
 
   // Footer
