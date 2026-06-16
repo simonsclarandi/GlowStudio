@@ -9,15 +9,19 @@ export default function Hero() {
 
   const handleAgendaClick = (e) => {
     e.preventDefault();
-    // Simula la apertura de WhatsApp
-    const message = encodeURIComponent(
-      `Hola Glow Studio. Quisiera agendar un turno para conocer sus tratamientos.`
-    );
-    window.open(`https://wa.me/${contact.phone}?text=${message}`, '_blank');
+    const section = document.getElementById('appointment');
+    if (section) {
+      // El offset de -100 es para que el Navbar no tape el título
+      const y = section.getBoundingClientRect().top + window.scrollY - 100;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    } else {
+      console.error("No se encontró la sección con el ID 'appointment'");
+    }
   };
 
   return (
     <section
+      id="inicio"
       className="relative flex min-h-[calc(100vh-96px)] items-center overflow-hidden bg-cover bg-center px-5 py-20"
       style={{ backgroundImage: `url('${hero.backgroundImage}')` }}
     >
@@ -48,10 +52,11 @@ export default function Hero() {
           {/* Botón principal */}
           <div className="flex flex-col gap-4 mt-4 sm:flex-row sm:items-center">
             <Button
+              component="a"
+              onClick={handleAgendaClick}
               variant="contained"
               size="large"
               startIcon={<CalendarMonthIcon />}
-              onClick={handleAgendaClick}
               sx={{
                 px: 5,
                 py: 1.7,

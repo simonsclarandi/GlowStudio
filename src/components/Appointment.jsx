@@ -72,7 +72,7 @@ export default function Appointment() {
   };
 
   return (
-    <section id="turnos" className="py-24 bg-white">
+    <section id="appointment" className="py-24 bg-white">
       <div className="px-6 mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="flex flex-col justify-center">

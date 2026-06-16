@@ -21,9 +21,9 @@ export const siteConfig = {
   },
 
   navLinks: [
-    { text: 'Inicio', href: '#hero' },
+    { text: 'Inicio', href: '#inicio' },
     { text: 'Servicios', href: '#servicios' },
-    { text: 'Contacto', href: '#cta-final' },
+    { text: 'Contacto', href: '#appointment' },
   ],
   contact: {
     phone: "5493515146748",
